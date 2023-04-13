@@ -12,6 +12,15 @@ h1{
     font-size: 3rem;
 }
 
+h2{
+    font-size: 2.5rem;
+}
+
+h2 > span{
+    font-size: 2.5rem;
+    color: #f14747 ;
+}
+
 h3{
     font-size: 1.5rem;
     color: white;
@@ -93,7 +102,7 @@ nav > div > span > span{
     padding: 14px;
 }
 
-#banner, #campaign{
+#banner, #campaign, #regis{
     display: flex;
     flex-direction: row;
     height: 550px;
@@ -157,7 +166,7 @@ h1 > span{
     flex-direction: column;
 }
 
-#text-abt, #text-cpg, #text-ff{
+#description, #text-cpg, #text-ff{
     text-align: justify;
 }
 
@@ -222,6 +231,17 @@ h1 > span{
     justify-content: baseline;
 }
 
+#form-regis{
+    flex-direction: column;
+    /* background-color: #7e7e7e; */
+    width: 40%;
+    padding: 1.5rem;
+}
+
+#form-regis > label {
+    color: black;
+}
+
 #cu{
     display: flex;
     justify-content: space-between;
@@ -229,7 +249,7 @@ h1 > span{
     background-color: rgb(41, 41, 41);
 }
 
-form, .cu-footer{
+#form-saran, .cu-footer{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -277,13 +297,13 @@ label{
     color: #fff;
 }
 
-#email, #msg, textarea{
+#name, #city, #email, #zip-code, #msg, textarea{
     width: 100%;
     padding: 8px 12px;
     margin-bottom: 1rem;
     border: 2px solid #7e7e7e;
     border-radius: 4px;
-    background-color: rgb(197, 228, 250);
+    background-color: rgb(209, 234, 252);
 }
 
 #checkbox{
