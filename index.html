@@ -19,7 +19,7 @@
             <a href="#" class="nav-text-active">Beranda</a>
             <a href="#about-us" class="nav-text">Tentang Kami</a>
             <a href="#" class="nav-text">Kategori</a>
-            <a href="#" class="nav-text">Artikel</a>
+            <a href="https://skilvul.com" class="nav-text" id="link">Artikel</a>
         </div>
         <div class="item">
             <button class="button"><a href="#cu">Hubungi Kami</button>
@@ -51,7 +51,7 @@
             <div class="item" style="width: 50%;">
                 <div class="col">
                     <h1>Tentang Kami</h1>
-                    <p id="text-abt">Kami adalah pelindung bumi, dengan tindakan ramah lingkungan, 
+                    <p id="description">Kami adalah pelindung bumi, dengan tindakan ramah lingkungan, 
                         kami jaga alam yang sehat dan lestari. Bersama-sama kita hijaukan 
                         bumi, dengan aksi kecil dan konsisten, kita jaga keberlangsungan 
                         hidup alam. 
@@ -127,9 +127,37 @@
         </div>
     </div>
 
+    <!-- FORM REGIS -->
+    <div id="regis">
+        <div class="container">
+            <div class="item" style="width: 40%;">
+                <h2>Ingin Bergabung dengan Kami? <br><span>Daftar Sekarang!</span> </h2>
+            </div>
+            <form id="form-regis"> 
+                <label for="name">Nama</label>
+                <input type="text" id="name" placeholder="Nama Lengkap" required>
+                
+                <label for="city">Kota</label>
+                <input type="text" id="city" placeholder="Kota Tempat Tinggal" required>
+        
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="abcdefg@example.com" required>
+        
+                <label for="zip-code">Kode Pos</label>
+                <input type="number" id="zip-code" placeholder="Kode POS" required>
+        
+                <input type="checkbox" name="status" id="status" required>
+                <label id="check">Dengan ini saya menyatakan data yang diisi pada form ini adalah benar dan telah sesuai</label><br><br>
+                
+                <button type="submit" id="submit-form" class="button">Daftar</button>
+                <div id="warning" style="margin-bottom: 10px; color: red;"></div>
+            </form>
+        </div>
+    </div>
+
     <!-- CONTACT US -->
     <div id="cu">
-        <form> 
+        <form id="form-saran"> 
             <h3>Memiliki masukan untuk kami? <br> Tulis pesanmu disini.</h3>
             <label for="email">Email</label>
             <input type="email" id="email" placeholder="abcdefg@example.com" required>
@@ -137,11 +165,7 @@
             <label for="msg">Pesan</label>
             <textarea name="msg" id="msg" cols="60" rows="2" placeholder="Masukkan pesan anda" required></textarea>
 
-            <input type="checkbox" name="status" id="status" required>
-            <label for="status">Pastikan pesan menggunakan bahasa yang baik.</label>
-
             <button type="submit" id="btn-send" class="button">Kirim</button>
-            <div id="warning" style="margin-top: 10px;  color: red;"></div>
         </form>
         <div class="cu-footer">
             <div>
@@ -172,9 +196,10 @@
             </div>
         </div>
     </div>
-    <div class="cp">
+
+    <footer class="cp">
         <p>Copyright &copy; 2023. Go Green</p>
-    </div>
+    </footer>
 
 </body>
 </html>
